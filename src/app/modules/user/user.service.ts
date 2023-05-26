@@ -21,9 +21,8 @@ export const createUserToDB=async(payload:IUser):Promise<IUser>=>{
     //   permanentAddress:'bangladesh'
     
     // });
+     
     
-    
-
     const user=new User(payload);  //creating new user
     await user.save();   // built in instance method
     // custom instance method

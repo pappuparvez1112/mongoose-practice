@@ -71,6 +71,7 @@ userSchema.static('getAdminUsers', async function getAdminUsers() {
   userSchema.method('fullName', function fullName() {
     return this.name.firstName + ' ' + this.name.lastName;
   });
+  
   const User = model<IUser,UserModel>('User', userSchema);
 
   export default User;
